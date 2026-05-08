@@ -11,5 +11,4 @@ out/
 *.iml
 /.idea/
 /.intellijPlatform/
-/gradle/
 /.tmp/
