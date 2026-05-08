@@ -1,7 +1,7 @@
 plugins {
     id("java")
     id("org.jetbrains.kotlin.jvm") version "1.9.25"
-    id("org.jetbrains.intellij.platform") version "2.1.0"
+    id("org.jetbrains.intellij.platform") version "2.5.0"
 }
 
 group = providers.gradleProperty("pluginGroup").get()
@@ -41,6 +41,12 @@ intellijPlatform {
         ideaVersion {
             sinceBuild = providers.gradleProperty("pluginSinceBuild")
             untilBuild = provider { null }
+        }
+    }
+
+    pluginVerification {
+        ides {
+            recommended()
         }
     }
 }

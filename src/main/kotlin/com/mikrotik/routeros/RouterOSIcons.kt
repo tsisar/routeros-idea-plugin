@@ -4,5 +4,5 @@ import com.intellij.openapi.util.IconLoader
 
 object RouterOSIcons {
     @JvmField
-    val FILE = IconLoader.getIcon("/icons/routeros.svg", RouterOSIcons::class.java)
+    val FILE = IconLoader.getIcon("/icons/mikrotik.png", RouterOSIcons::class.java)
 }
