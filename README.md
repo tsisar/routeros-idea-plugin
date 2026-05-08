@@ -2,6 +2,8 @@
 
 An IntelliJ IDEA plugin that adds support for MikroTik RouterOS scripts (`.rsc`, `.ros`).
 
+![Syntax highlighting](docs/screenshots/syntax-highlighting.png)
+
 ## Features
 
 - Syntax highlighting: commands, paths, properties, variables, strings, comments
