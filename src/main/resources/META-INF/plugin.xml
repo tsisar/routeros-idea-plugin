@@ -1,0 +1,36 @@
+<idea-plugin>
+    <id>com.mikrotik.routeros</id>
+    <name>RouterOS Script Support</name>
+    <vendor email="fhantom.tp@gmail.com">tsisar</vendor>
+
+    <description><![CDATA[
+        Syntax highlighting for MikroTik RouterOS scripts (.rsc, .ros).
+        Recognises commands, paths, properties, variables, strings and comments.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileType
+                name="RouterOS"
+                implementationClass="com.mikrotik.routeros.RouterOSFileType"
+                fieldName="INSTANCE"
+                language="RouterOS"
+                extensions="rsc;ros"/>
+
+        <lang.syntaxHighlighterFactory
+                language="RouterOS"
+                implementationClass="com.mikrotik.routeros.RouterOSSyntaxHighlighterFactory"/>
+
+        <lang.commenter
+                language="RouterOS"
+                implementationClass="com.mikrotik.routeros.RouterOSCommenter"/>
+
+        <lang.braceMatcher
+                language="RouterOS"
+                implementationClass="com.mikrotik.routeros.RouterOSBraceMatcher"/>
+
+        <colorSettingsPage
+                implementation="com.mikrotik.routeros.RouterOSColorSettingsPage"/>
+    </extensions>
+</idea-plugin>
